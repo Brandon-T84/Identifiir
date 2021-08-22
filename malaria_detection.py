@@ -9,7 +9,7 @@ Original file is located at
 
 # Commented out IPython magic to ensure Python compatibility.
 # %tensorflow_version 2.x
-!pip install -q kaggle
+
 from urllib.request import urlretrieve
 from pathlib import Path
 import matplotlib.pyplot as plt
@@ -45,21 +45,21 @@ from keras.callbacks import ModelCheckpoint
 from keras.applications.vgg16 import VGG16
 from keras.applications.vgg19 import VGG19
 from keras.applications.densenet import DenseNet121
-!pip install kaggle
-
 from google.colab import files
+# !pip install kaggle
+
 files.upload()
-!ls -lha kaggle.json
+# !ls -lha kaggle.json
 
-!mkdir -p ~/.kaggle
-!cp kaggle.json ~/.kaggle/
+# !mkdir -p ~/.kaggle
+# !cp kaggle.json ~/.kaggle/
 
-!chmod 600 ~/.kaggle/kaggle.json
+# !chmod 600 ~/.kaggle/kaggle.json
 
-!kaggle datasets download -d iarunava/cell-images-for-detecting-malaria
+# !kaggle datasets download -d iarunava/cell-images-for-detecting-malaria
 
-!cd /content/
-!unzip cell-images-for-detecting-malaria.zip
+# !cd /content/
+# !unzip cell-images-for-detecting-malaria.zip
 
 imageDataGenerator = tf.keras.utils.image_dataset_from_directory
 batch_size = 32
