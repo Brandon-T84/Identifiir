@@ -15,7 +15,7 @@ function redirectnews() {
 	window.location.href = "newspaper.html"
 }
 
-function redirectlaws () {
+function redirectlaws() {
 
 
 	window.location.href = "laws.html"
@@ -29,4 +29,8 @@ function redirectpronouns() {
 function redirecthome() {
 
 	window.location.href = "index.html"
+}
+
+function redirectimages() {
+	window.location.href = 'images.html'
 }

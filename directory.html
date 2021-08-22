@@ -28,14 +28,21 @@
 </center>
 
 <div style="height: 50px;">
-  <form action="">
+  <form action="/image">
     <input style="height: 100%;" type="file" class="form-control" id="inputGroupFile04"
       aria-describedby="inputGroupFileAddon04" aria-label="Upload" />
-    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
+    <button onclick="redirectimages()" class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">
       Upload
     </button>
   </form>
 </div>
+
+<!-- {% if prediction %}
+<h1 class="text-center" style="margin-top: 10px; text-align: center">
+  Image is {{ prediction }}
+</h1>
+{% endif%} -->
+
 <link rel="stylesheet" type="text/css" href="home.css">
 <link rel="stylesheet" type="text/css" href="directory.css">
 <script type="text/javascript" src="directory.js"></script>
